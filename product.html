@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenden-Products</title>
+
+    <!-- Tailwind CSS CDN Link from "https://www.jsdelivr.com/"-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Resposive Navbar -->
+    <nav class="bg-green-100 p-5 flex items-center justify-between shadow-xl sticky top-0 z-50">
+
+        <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
+
+        <!-- Icon SVG from "https://heroicons.com/" -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <!-- Responsive design Docs:  https://tailwindcss.com/docs/responsive-design#using-custom-breakpoints -->
+
+        <ul class="flex gap-5 text-gray-600 font-semibold hidden md:flex">
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html">Home</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./product.html">Products</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html#process">Our
+                    Process</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="/index.html#about">About us</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Section -->
+    <section class="px-4 py-12 m-6 sm:px-6 lg:px-10 lg:py-14">
+        <div class="mb-10 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                Plants for you
+            </h2>
+
+            <p class="text-sm text-gray-700 sm:text-base">
+                Explore our Plants for Simpler, Happier, and Greener Home Gardening
+            </p>
+        </div>
+
+        <div class="mx-auto grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 ">
+            <!-- Card-1 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-01.webp"
+                    alt="Peace Lily Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Stunning air-purifying plant</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Long-lasting indoor plant</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;249</span>
+                            <span class="line-through text-gray-400">&#x20B9;400</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card-2 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-02.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Anthurium Red Plant</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Long-lasting indoor plant</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;699</span>
+                            <span class="line-through text-gray-400">&#x20B9;800</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-3 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-03.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Jade Mini Plant</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Easy-care lucky succulent</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;249</span>
+                            <span class="line-through text-gray-400">&#x20B9;400</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card-4 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-04.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Money Plant Golden</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Golden plant, attracts luck</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;249</span>
+                            <span class="line-through text-gray-400">&#x20B9;500</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card-5 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-05.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Areca Palm Plant XL</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Tropical plant, purifies air</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;1,799</span>
+                            <span class="line-through text-gray-400">&#x20B9;2,500</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card-6 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-06.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">The China Doll Plant - XL</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Evergreen ornamental indoor plant</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;1,699</span>
+                            <span class="line-through text-gray-400">&#x20B9;2,100</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card-7 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-07.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Aglaonema Pink Beauty Plant</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Pink-patterned tropical stunner</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;699</span>
+                            <span class="line-through text-gray-400">&#x20B9;800</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card-8 -->
+            <div
+                class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-08.webp"
+                    alt="Anthurium Red Plant">
+                <div class="p-5">
+                    <h2 class="mb-3 mt-3 text-lg md:text-xl font-bold text-green-900">Lucky Bamboo Plant - 3 Layer</h2>
+                    <p class="mb-4  leading-6 text-gray-700">Goodluck plant, great gift</p>
+                    <div class="flex justify-between items-center">
+                        <div><span>&#x20B9;399</span>
+                            <span class="line-through text-gray-400">&#x20B9;700</span>
+                        </div>
+
+                        <div>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-full md:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-red-800 text-white p-3 px-4 rounded-3xl hidden md:block">View
+                                Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestseller -->
+    <section class="px-4 py-12 m-6 sm:px-6 lg:px-10 lg:py-14">
+        <div class="mb-10 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                What are you looking for ?
+            </h2>
+
+            <p class="text-sm text-gray-700 sm:text-base">
+                (Currently providing services only in Mumbai, Pune, Bangalore,Delhi-NCR)
+            </p>
+        </div>
+        <div class="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
+            <!-- Card-1 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-01.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Potted-Exotic Garden Care</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Card-2 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-1 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-02.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Vertical Gardens</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Card-3 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-1 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-03.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Corporate Plant Rentals</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Card-4 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-1 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-04.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Indoor Plant Styling</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="bg-yellow-50 px-4 py-10 sm:px-6 lg:px-10">
+
+        <div class="mx-auto max-w-7xl">
+
+            <!-- Heading -->
+            <div class="mb-10 text-center">
+                <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                    Our Projects
+                </h2>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 gap-3 grid-cols-2 lg:grid-cols-6">
+
+                <!-- Project 1: Large -->
+                <div class="overflow-hidden rounded-xl col-span-2 lg:col-span-3">
+                    <img src="./images/P-01.webp" alt="Indoor garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 2 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-1">
+                    <img src="./images/P-02.webp" alt="Vertical garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 3 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-03.webp" alt="Indoor plant styling"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 4 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-04.webp" alt="Garden interior project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 5 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-05.webp" alt="Terrace garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 6 -->
+                <div class="overflow-hidden rounded-xl col-span-2 lg:col-span-2">
+                    <img src="./images/P-06.webp" alt="Outdoor garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 7: Large -->
+                <div class="overflow-hidden rounded-xl col-span-2 lg:col-span-3">
+                    <img src="./images/P-07.webp" alt="Indoor garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 8 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-1">
+                    <img src="./images/P-08.webp" alt="Vertical garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 9 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-09.webp" alt="Indoor plant styling"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="px-4 py-5 sm:px-6 lg:px-10 bg-green-100">
+        <h1 class="text-2xl font-bold text-green-800">Greenden</h1>
+        <p class="my-2">Let’s create a green space that grows with you. Lush, sustainable, and stress-free. </p>
+        <p class="mt-10 text-green-800">&copy;2026 Greenden.com</p>
+    </section>
+</body>
+
+</html>

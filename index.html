@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenden</title>
+
+    <!-- Tailwind CSS CDN Link from "https://www.jsdelivr.com/"-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Resposive Navbar -->
+    <nav class="bg-green-100 p-5 flex items-center justify-between shadow-xl sticky top-0 z-50">
+
+        <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
+
+        <!-- Icon SVG from "https://heroicons.com/" -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <!-- Responsive design Docs:  https://tailwindcss.com/docs/responsive-design#using-custom-breakpoints -->
+        <ul class="flex gap-5 text-gray-600 font-semibold hidden md:flex">
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html">Home</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./product.html">Products</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html#process">Our
+                    Process</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="/index.html#about">About us</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="home" class="bg-green-100 p-8 flex justify-center items-center scroll-mt-20">
+        <div class="mr-4">
+            <p class="text-gray-500 font-semibold tracking-widest text-xs mb-1">FIND THE PERFECT PLANTS FOR EVERY POT
+            </p>
+
+            <h1 class="mb-4 text-4xl font-bold text-green-900 sm:text-5xl">For Your Garden & Office Space</h1>
+            <button class="bg-yellow-600 text-white p-2 rounded my-2 font-medium mr-2">Book Service</button>
+            <button class="border-yellow-600 border p-2 rounded my-2 text-yellow-600 font-medium">Explore
+                Plants</button>
+            <p class="mt-3 text-gray-500">25+ acres of farms | 600+ clients</p>
+        </div>
+        <div class="hidden md:block">
+            <img src="./images/img_13.png" alt="Header Image" class="w-72">
+        </div>
+    </section>
+
+    <!-- Bestseller -->
+    <section class="px-4 py-12 m-6 sm:px-6 lg:px-10 lg:py-14">
+        <div class="mb-10 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                What are you looking for ?
+            </h2>
+
+            <p class="text-sm text-gray-700 sm:text-base">
+                (Currently providing services only in Mumbai, Pune, Bangalore,Delhi-NCR)
+            </p>
+        </div>
+        <div class="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
+            <!-- Card-1 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-01.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Potted-Exotic Garden Care</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Card-2 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-1 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-02.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Vertical Gardens</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Card-3 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-1 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-03.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Corporate Plant Rentals</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Card-4 -->
+            <div
+                class="mx-auto grid p-5 gap-1 text-sm bg-gray-100 rounded m-1 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-1 hover:shadow-lg hover:bg-green-100">
+                <img class="w-80 mx-auto rounded-2xl object-cover" src="./images/best-04.webp" alt="best-img">
+                <h2 class="mb-3 mt-3 text-base font-bold text-green-900">Indoor Plant Styling</h2>
+                <p class="mb-4 text-sm leading-6 text-gray-700">Add a touch of lush sophistication to your spaces
+                    with rare and exotic potted plants.
+
+
+                <ul class="space-y-2 text-sm leading-6 text-gray-500">
+                    <li class="flex items-start gap-2">
+                        <span class="font-bold text-green-600">✓</span>
+                        <p>Annual Maintenance Packages (Corporate & Hospitality).</p>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <span class=" font-bold text-green-600">✓</span>
+                        <p>Flexible Subscription-Based Plant Care Plans.</p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+    </section>
+
+    <!-- About us Section  -->
+    <section class="px-4 py-12 m-6 sm:px-6 lg:px-10 lg:py-14 text-center" id="about">
+        <div class="mb-10 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                About us
+            </h2>
+
+            <p class="text-sm text-gray-700 sm:text-base">
+                From balcony gardens to corporate landscapes – we design, maintain, and care for green spaces that
+                thrive all year round.
+            </p>
+        </div>
+
+        <div class="mx-auto grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3">
+            <div
+                class="border border-black p-2 m-2 md:m-6 rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-20 inline text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                </svg>
+
+                <h2 class="md:mb-5 md:mt-5 text-lg font-bold text-green-900">Garden Maintenance</h2>
+                <p class="text-justify ml-2 md:leading-7 text-gray-500">Lawn care, pruning & upkeep to maintain a neat
+                    and
+                    vibrant look.
+                    Soil treatment - composting, pH balancing, and amendment for better growth.
+                </p>
+            </div>
+            <div
+                class="border border-black p-2 m-2 md:m-6 rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-20 inline text-green-700 ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0 1 12 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+                </svg>
+
+                <h2 class="md:mb-5 md:mt-5 text-lg font-bold text-green-900">Vertical Gardens Walls</h2>
+                <p class="text-justify ml-2 md:leading-7 text-gray-500">Innovative vertical gardening solutions for
+                    homes,
+                    corporates, and public
+                    spaces.
+                    Modular green wall systems designed for easy installation.</p>
+            </div>
+            <div
+                class="border border-black p-2 m-2 md:m-6 rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-20 inline text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                </svg>
+
+                <h2 class="md:mb-5 md:mt-5 text-lg font-bold text-green-900">Corporate Plant Rentals </h2>
+                <p class="text-justify ml-2  md:leading-7 text-gray-500">Indoor plant rental services for offices,
+                    events,
+                    and hospitality spaces.
+                    Wide variety of plants (from 6” to 6’) with planters to match your interiors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="px-4 py-12 sm:px-6 lg:px-10 lg:py-14 m-4" id="process">
+
+        <!-- Section Heading -->
+        <div class="mb-10 text-center">
+            <h3 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                Our Process
+            </h3>
+
+            <p class="text-sm text-gray-700 sm:text-base">
+                Greenifying your space made easy by Greenden.
+            </p>
+        </div>
+
+        <!-- Process Cards -->
+        <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+
+            <!-- Step 1 -->
+            <div class="relative rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+
+                <span
+                    class="absolute -left-3 -top-1 flex h-11 w-11 items-center justify-center rounded-full bg-green-600 text-xl font-bold text-white">
+                    1
+                </span>
+
+                <h3 class="mb-3 ml-2 text-lg font-bold text-green-900">
+                    Site Visit & Evaluation
+                </h3>
+
+                <p class="ml-2 leading-7 text-gray-500">
+                    We assess lighting, drainage, water pressure, aesthetics,
+                    and more to understand your space.
+                </p>
+
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+
+                <span
+                    class="absolute -left-3 -top-1 flex h-11 w-11 items-center justify-center rounded-full bg-green-600 text-xl font-bold text-white">
+                    2
+                </span>
+
+                <h3 class="mb-3 ml-2 text-lg font-bold text-green-900">
+                    Design & Planning
+                </h3>
+
+                <p class="ml-2 text-base leading-7 text-gray-500">
+                    Our experts create a customized plan aligned with
+                    your interiors or project scope.
+                </p>
+
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+
+                <span
+                    class="absolute -left-3 -top-1 flex h-11 w-11 items-center justify-center rounded-full bg-green-600 text-xl font-bold text-white">
+                    3
+                </span>
+
+                <h3 class="mb-3 ml-2 text-lg font-bold text-green-900">
+                    Client Approval
+                </h3>
+
+                <p class="ml-2 text-base leading-7 text-gray-500">
+                    You review and approve the plan—we only move forward
+                    once you're happy.
+                </p>
+
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative rounded-2xl border-t-2 border-green-600 bg-white px-6 py-8 shadow-md">
+
+                <span
+                    class="absolute -left-3 -top-1 flex h-11 w-11 items-center justify-center rounded-full bg-green-600 text-xl font-bold text-white">
+                    4
+                </span>
+
+                <h3 class="mb-3 ml-2 text-lg font-bold text-green-900">
+                    Installation & Ongoing Care
+                </h3>
+
+                <p class="ml-2 text-base leading-7 text-gray-500">
+                    We bring your garden to life and keep it thriving
+                    with our maintenance packages.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose Greenden Section  -->
+    <section class="px-4 sm:px-6 lg:px-10 lg:py-14 m-6 bg-green-50 shadow-xl">
+        <div class="mb-10 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                Why Choose Ugaoo for Garden Services?
+            </h2>
+
+            <p class="text-sm text-gray-700 sm:text-base">
+                With 600+ satisfied clients and projects across India, here’s why we stand out:
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+
+            <div class="flex flex-col justify-center items-center text-center gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-16 h-16 flex p-3 items-center justify-center rounded-full bg-gray-100 text-xl text-green-600">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                </svg>
+
+                <p class="font-semibold">Trusted by Leading Brands</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center text-center gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-16 h-16 flex p-3 items-center justify-center rounded-full bg-gray-100 text-xl text-green-600">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                </svg>
+
+                <p class="font-semibold">Sustainable & Eco-Friendly</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center text-center gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-16 h-16 flex p-3 items-center justify-center rounded-full bg-gray-100 text-xl text-green-600">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+
+                <p class="font-semibold"> Proven Results</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center text-center gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-16 h-16 flex p-3 items-center justify-center rounded-full bg-gray-100 text-xl text-green-600">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                </svg>
+
+                <p class="font-semibold"> Tailored to You</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Our Esteemed Clients Style Section -->
+    <style>
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 10s linear infinite;
+        }
+
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+    </style>
+
+    <!-- Our Esteemed Clients -->
+    <section class="px-4 py-10">
+        <div class="mx-auto max-w-7xl text-center">
+            <div class="mb-10 text-center">
+                <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                    Our Esteemed Clients
+                </h2>
+
+                <p class="text-sm text-gray-700 sm:text-base">
+                    We are proud to partner with trusted brands and organizations.
+                </p>
+            </div>
+
+            <!-- Marquee Container -->
+            <div class="overflow-hidden border-y border-green-200 py-5">
+
+                <!-- Moving Track -->
+                <div class="flex animate-marquee items-center gap-10">
+
+                    <!-- Original Logos -->
+                    <img src="./images/EC-01.webp" alt="EC-01" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-02.avif" alt="EC-02" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-03.avif" alt="EC-03" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-04.avif" alt="EC-04" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-05.avif" alt="EC-05" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-06.avif" alt="EC-06" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-07.jxl" alt="EC-07" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-08.jxl" alt="EC-08" aria-hidden="true"
+                        class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-09.jxl" alt="EC-09" aria-hidden="true"
+                        class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-10.avif" alt="EC-10" aria-hidden="true"
+                        class="h-12 w-28 shrink-0 object-contain">
+
+                    <!-- Duplicate Logos for Seamless Loop -->
+                    <img src="./images/EC-01.webp" alt="EC-01" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-02.avif" alt="EC-02" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-03.avif" alt="EC-03" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-04.avif" alt="EC-04" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-05.avif" alt="EC-05" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-06.avif" alt="EC-06" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-07.jxl" alt="EC-07" class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-08.jxl" alt="EC-08" aria-hidden="true"
+                        class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-09.jxl" alt="EC-09" aria-hidden="true"
+                        class="h-12 w-28 shrink-0 object-contain">
+
+                    <img src="./images/EC-10.avif" alt="EC-10" aria-hidden="true"
+                        class="h-12 w-28 shrink-0 object-contain">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="bg-yellow-50 px-4 py-10 sm:px-6 lg:px-10">
+
+        <div class="mx-auto max-w-7xl">
+
+            <!-- Heading -->
+            <div class="mb-10 text-center">
+                <h2 class="mb-4 text-3xl font-bold text-green-900 sm:text-4xl">
+                    Our Projects
+                </h2>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 gap-3 grid-cols-2 lg:grid-cols-6">
+
+                <!-- Project 1: Large -->
+                <div class="overflow-hidden rounded-xl col-span-2 lg:col-span-3">
+                    <img src="./images/P-01.webp" alt="Indoor garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 2 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-1">
+                    <img src="./images/P-02.webp" alt="Vertical garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 3 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-03.webp" alt="Indoor plant styling"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 4 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-04.webp" alt="Garden interior project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 5 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-05.webp" alt="Terrace garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 6 -->
+                <div class="overflow-hidden rounded-xl col-span-2 lg:col-span-2">
+                    <img src="./images/P-06.webp" alt="Outdoor garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 7: Large -->
+                <div class="overflow-hidden rounded-xl col-span-2 lg:col-span-3">
+                    <img src="./images/P-07.webp" alt="Indoor garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 8 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-1">
+                    <img src="./images/P-08.webp" alt="Vertical garden project"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+                <!-- Project 9 -->
+                <div class="overflow-hidden rounded-xl col-span-1 lg:col-span-2">
+                    <img src="./images/P-09.webp" alt="Indoor plant styling"
+                        class="h-64 w-full object-cover transition duration-500 hover:scale-105 sm:h-72">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="px-4 py-12 sm:px-6 lg:px-10">
+
+        <div class="mx-auto max-w-6xl">
+
+            <h2 class="mb-10 text-3xl font-bold text-green-900 sm:text-4xl">
+                What our customers say
+            </h2>
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Testimonial 1 -->
+                <div class="flex flex-col rounded-xl border border-green-80 p-4 bg-green-900">
+
+                    <span class="mb-3 text-4xl font-bold leading-none text-white">
+                        &ldquo;
+                    </span>
+
+                    <p class="mb-4 flex-grow text-sm leading-[1.7] text-white">
+                        We are very happy with your services. The plants are keeping our office fresh and vibrant, and
+                        the newly added plants are also very healthy and lively. Your staff visits regularly as per
+                        schedule, maintaining everything in a proper manner. We truly appreciate your work and
+                        commitment.
+                    </p>
+
+                    <p class="text-sm font-bold leading-5 text-green-400">
+                        Bhageshri. Office Manager,Vantage Tech Pvt. Ltd.
+                    </p>
+
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="flex flex-col rounded-xl border border-green-80 p-4 bg-green-900">
+
+                    <span class="mb-3 text-4xl font-bold leading-none text-white">
+                        &ldquo;
+                    </span>
+
+                    <p class="mb-4 flex-grow text-sm leading-[1.7] text-white">
+                        We’ve been associated with Ugaoo for the past three years and are extremely pleased with their
+                        exceptional plant management services. Their team ensures our workspace stays green, vibrant,
+                        and well-maintained year-round. The staff is professional, proactive, and always open to
+                        feedback.
+                    </p>
+
+                    <p class="text-sm font-bold leading-5 text-green-400">
+                        Sanket Yenpure. Facility Manager - C&W
+                    </p>
+
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="flex flex-col rounded-xl border border-green-80 p-4 bg-green-900">
+
+                    <span class="mb-3 text-4xl font-bold leading-none text-white">
+                        &ldquo;
+                    </span>
+
+                    <p class="mb-4 flex-grow text-sm leading-[1.7] text-white">
+                        We are happy to have your greens in our premises. It surely brings a lot of freshness to our
+                        space. We appreciate your services and prompt action to our requests from time to time.
+                    </p>
+
+                    <p class="mt-auto text-sm font-bold leading-5 text-green-400">
+                        Anita. Cravatex Ltd, Mumbai
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="px-4 py-5 sm:px-6 lg:px-10 text-center">
+
+        <div class="mx-auto">
+
+            <h2 class="mb-5 text-3xl font-bold text-green-900 sm:text-4xl">
+                Join our News Letter
+            </h2>
+            <p class="text-sm text-gray-700 sm:text-base">
+                Signup for our email newspaper to get exclusive dicsount, updates and more
+            </p>
+            <input type="text" class="border border-black p-2 m-10 " style="width: 70%; height: 100px; ">
+            <br><button class="text-white bg-black rounded p-3">Subcribe</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="px-4 py-5 sm:px-6 lg:px-10 bg-green-100">
+        <h1 class="text-2xl font-bold text-green-800">Greenden</h1>
+        <p class="my-2">Let’s create a green space that grows with you. Lush, sustainable, and stress-free. </p>
+        <p class="mt-10 text-green-800">&copy;2026 Greenden.com</p>
+    </section>
+</body>
+
+</html>
