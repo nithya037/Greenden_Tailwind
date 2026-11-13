@@ -12,17 +12,16 @@
 
 <body>
     <!-- Resposive Navbar -->
-    <nav class="bg-green-100 p-5 flex items-center justify-between shadow-xl sticky top-0 z-50">
+    <nav class="bg-green-100 p-5 flex items-center justify-between shadow-xl sticky top-0 z-10">
 
         <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
 
         <!-- Icon SVG from "https://heroicons.com/" -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
         <!-- Responsive design Docs:  https://tailwindcss.com/docs/responsive-design#using-custom-breakpoints -->
-
         <ul class="flex gap-5 text-gray-600 font-semibold hidden md:flex">
             <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html">Home</a></li>
             <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./product.html">Products</a></li>
@@ -33,6 +32,28 @@
             <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./contact.html">Contact us</a></li>
         </ul>
     </nav>
+
+    <!-- Side Navbar -->
+    <section id="sideNav" class="bg-green-100 fixed z-20 shadow-md top-0 md:hidden transition-all duration-1000"
+        style="width: 40%; height: 100vh; right:-40%">
+        <div class="text-right p-5">
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <!-- <span id="closeNav" class="inline cursor-pointer">X</span> -->
+        </div>
+        <ul class="flex flex-col mx-5 gap-10 text-gray-600 font-semibold md:flex ">
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html">Home</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./product.html">Products</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html#process">Our
+                    Process</a></li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./index.html#about">About us</a>
+            </li>
+            <li><a class="hover:text-white hover:bg-green-900 rounded-lg p-2" href="./contact.html">Contact us</a></li>
+        </ul>
+    </section>
 
     <!-- Search Bar -->
     <div class="max-w-3xl mx-auto mt-10">
@@ -52,7 +73,7 @@
 
             <!-- Search Input -->
             <input type="text" id="searchInput" placeholder="Search for plants..."
-                class="w-full outline-none px-3 text-gray-700 bg-transparent"/>
+                class="w-full outline-none px-3 text-gray-700 bg-transparent" />
 
         </div>
 
@@ -71,9 +92,9 @@
             </p>
         </div>
 
-        <div class="mx-auto grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 ">
+        <div id="proContainer" class="mx-auto grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 ">
             <!-- Card-1 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-01.webp"
                     alt="Peace Lily Plant">
@@ -98,9 +119,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <!-- Card-2 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-02.webp"
                     alt="Anthurium Red Plant">
@@ -125,10 +146,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Card-3 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-03.webp"
                     alt="Anthurium Red Plant">
@@ -153,9 +174,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <!-- Card-4 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-04.webp"
                     alt="Anthurium Red Plant">
@@ -180,9 +201,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <!-- Card-5 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-05.webp"
                     alt="Anthurium Red Plant">
@@ -207,9 +228,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <!-- Card-6 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-06.webp"
                     alt="Anthurium Red Plant">
@@ -234,9 +255,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <!-- Card-7 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-07.webp"
                     alt="Anthurium Red Plant">
@@ -261,9 +282,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <!-- Card-8 -->
-            <div
+            <article
                 class="mx-auto grid gap-1 bg-gray-100 rounded-2xl border border-t-2 transition duration-300 transform ease-linear hover:-translate-y-2 hover:shadow-lg hover:bg-green-100">
                 <img class="w-full h-48 md:h-full mx-auto rounded-t-2xl object-cover" src="./images/product-08.webp"
                     alt="Anthurium Red Plant">
@@ -288,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -474,6 +495,9 @@
         <p class="my-2">Let’s create a green space that grows with you. Lush, sustainable, and stress-free. </p>
         <p class="mt-10 text-green-800">&copy;2026 Greenden.com</p>
     </section>
+
+    <!-- Link JS file -->
+    <script src="product.js"></script>
 </body>
 
 </html>
